@@ -1,0 +1,15 @@
+@mixin onDesktop {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  @include onDesktop {
+    padding: 0 100px;
+  }
+}

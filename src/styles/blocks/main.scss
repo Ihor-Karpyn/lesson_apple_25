@@ -1,0 +1,10 @@
+.main {
+  padding: 10px 0;
+  background-color: antiquewhite;
+
+  &__content {
+    text-align: justify;
+    @include container;
+  }
+}
+

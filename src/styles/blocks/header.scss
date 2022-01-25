@@ -1,0 +1,28 @@
+.header {
+  $logoPaddingX: 30px;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include container;
+  }
+
+  &__logo {
+    margin-left: -$logoPaddingX;
+    padding: 0 $logoPaddingX;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: #ff0;
+    }
+  }
+}
